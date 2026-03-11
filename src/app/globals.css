@@ -2,19 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --green-dark: #0a1a0a;
-  --green-mid: #122012;
-  --green-accent: #1a3a1a;
-  --green-highlight: #2d5a2d;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--green-dark);
   color: white;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
