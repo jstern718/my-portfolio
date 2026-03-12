@@ -1,5 +1,6 @@
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Montserrat } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Nav";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -11,6 +12,12 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
 });
 
+const montserrat = Montserrat({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+});
+
 export const metadata = {
   title: "Your Name — Creative Portfolio",
   description: "Freelance developer, designer, and creative.",
@@ -19,7 +26,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable} bg-primary text-white`}>
+      <body className={`${inter.variable} ${playfair.variable} ${montserrat.variable} bg-primary text-white`}>
+        <Nav />
         {children}
       </body>
     </html>
