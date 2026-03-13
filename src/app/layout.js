@@ -1,4 +1,4 @@
-import { Inter, Playfair_Display, Montserrat } from "next/font/google";
+import { Inter, Playfair_Display, Montserrat, Poiret_One } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 
@@ -16,6 +16,12 @@ const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   variable: "--font-montserrat",
+});
+
+const poiret = Poiret_One({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-poiret",
 });
 
 export const metadata = {

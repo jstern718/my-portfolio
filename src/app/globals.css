@@ -4,11 +4,13 @@
   /* --color-primary: #c3e0e5; */
   --color-primary: #444A3F;
   --color-complement: #92889a;
+  --color-work: #fbfbfa;
   --color-green-accent: #1a3a1a;
   --color-highlight: #efe79d;
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Playfair Display', serif;
   --font-display: 'Montserrat', sans-serif;
+  --font-poiret: "Poiret One", sans-serif;
 }
 
 body {
@@ -20,4 +22,8 @@ body {
 ::selection {
   background-color: var(--color-green-highlight);
   color: white;
+}
+
+:root {
+  --color-primary: #444A3F;
 }

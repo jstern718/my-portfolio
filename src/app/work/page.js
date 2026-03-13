@@ -174,18 +174,18 @@ export default function WorkPage() {
   };
 
   return (
-    <main className="min-h-screen bg-primary pt-28 pb-20 px-6 md:px-20">
+    <main className="bg-work min-h-screen pt-28 pb-20 px-6 md:px-20">
       <div className="max-w-5xl mx-auto">
 
         {/* Header */}
-        <div className="mb-12">
+        <div className="mb-3">
           <p className="text-highlight text-xs uppercase tracking-widest font-sans mb-3 opacity-70">
             selected work
           </p>
-          <h1 className="font-display text-5xl md:text-7xl font-bold text-white tracking-widest">
+          <h1 className="font-display text-5xl md:text-7xl font-bold text-neutral-200 text-shadow-[0.3px_0.3px_0px] text-shadow-neutral-800 tracking-widest">
             PROJECTS
           </h1>
-          <p className="text-white/40 font-sans text-sm mt-3">
+          <p className="text-white/40 font-sans text-sm mt-1">
             {activeCategory
               ? `Showing ${categories[activeCategory].label} — click again to reset`
               : 'Click any card to explore that category'}

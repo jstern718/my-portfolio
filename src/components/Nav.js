@@ -7,16 +7,15 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-6 flex justify-between items-center">
-      {/* Logo / Name */}
-      <Link href="/" className="font-serif text-xl text-white tracking-wide">
-        Your Name
+    <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-6 flex justify-between items-center backdrop-blur-xl bg-black/7 border-b border-black/5">      {/* Logo / Name */}
+      <Link href="/" className="font-poiret text-xl text-white/80 tracking-wide">
+        uncommon design
       </Link>
 
       {/* Desktop links */}
-      <div className="hidden md:flex gap-10 font-sans text-sm uppercase tracking-widest text-white/70">
-        <Link href="/work" className="hover:text-white transition-colors">Work</Link>
-        <Link href="/education" className="hover:text-white transition-colors">Education</Link>
+      <div className="hidden md:flex gap-10 font-sans text-sm tracking-widest text-white/70">
+        <Link href="/work" className="hover:text-white transition-colors">work</Link>
+        <Link href="/education" className="hover:text-white transition-colors">education</Link>
         <Link href="#contact" className="hover:text-white transition-colors">contact</Link>
       </div>
 
