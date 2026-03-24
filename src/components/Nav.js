@@ -14,7 +14,7 @@ export default function Nav() {
 
       {/* Desktop links */}
       <div className="hidden md:flex gap-10 font-sans text-sm tracking-widest text-white/70">
-        <Link href="/work" className="hover:text-white transition-colors">work</Link>
+        <Link href="/work" className="hover:text-white transition-colors">portfolio</Link>
         <Link href="/education" className="hover:text-white transition-colors">education</Link>
         <Link href="#contact" className="hover:text-white transition-colors">contact</Link>
       </div>

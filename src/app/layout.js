@@ -1,4 +1,4 @@
-import { Inter, Playfair_Display, Montserrat, Poiret_One } from "next/font/google";
+import { Inter, Playfair_Display, Montserrat, Poiret_One, Rubik } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 
@@ -22,6 +22,11 @@ const poiret = Poiret_One({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-poiret",
+});
+
+const rubik = Rubik({
+  subsets: ["latin"],
+  variable: "--font-rubik",
 });
 
 export const metadata = {
