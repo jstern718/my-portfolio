@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const categories = {
   web: {
-    label: 'Web Development',
+    label: 'Web Dev',
     color: 'from-green-900 to-green-700',
     accent: '#639922',
     image: '/images/np/np_home2.jpeg',
@@ -41,7 +41,7 @@ const categories = {
     ],
   },
   print: {
-    label: 'Print on Demand',
+    label: 'Apparel',
     color: 'from-teal-900 to-teal-700',
     accent: '#1d9e75',
     image: '/images/print/print_image2.jpeg',
@@ -91,92 +91,126 @@ function Card({ card, index, activeCategory, onClick, rippleIndex, rippleOrder }
     if (ref.current) ref.current.style.transform = '';
   };
 
-// ===================================================
-
   return (
-    <motion.div
-      ref={ref}
+    <div
       className={`
-        ${card.style} relative rounded-2xl overflow-hidden cursor-pointer border border-white/10
-        min-h-[220px]
-        ${card.size === 'large' ? 'md:min-h-[320px]' : card.size === 'wide' ? 'md:min-h-[160px]' : 'md:min-h-[10px]'}
+        ${card.style} relative min-h-[220px]
+        ${card.size === 'large' ? 'md:min-h-[320px]' : card.size === 'wide' ? 'md:min-h-[160px]' : 'md:min-h-[120px]'}
       `}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-      onClick={() => onClick(card, index)}
-      animate={{
-        scale: isFlipped ? 1.02 : 1,
-        borderColor: isActive ? 'rgba(255,255,255,0.4)' : 'rgba(255,255,255,0.1)',
-      }}
-      transition={{ duration: 0.3 }}
+      style={{ padding: '8px 4px 4px 8px' }}
     >
-      {/* Triple border — top only */}
-      <div className="absolute top-0 left-0 right-0 z-20 pointer-events-none">
-        <div style={{ height: '1px', background: 'black' }} />
-        <div style={{ height: '1px', background: 'white' }} />
-        <div style={{ height: '1px', background: 'black' }} />
-      </div>
-
-      {/* Background — image if available, gradient fallback */}
-      {cat.image ? (
-        <>
-          <Image
-            src={cat.image}
-            alt={cat.label}
-            fill
-            className={cat.imageClass}
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
-          <div className="absolute inset-0 bg-white/30" />
-        </>
-      ) : (
-        <>
-          <div className={`absolute inset-0 bg-gradient-to-br ${cat.color} opacity-60`} />
-          <div className="absolute inset-0 bg-black/30" />
-        </>
-      )}
-
-      {/* Default view — category label */}
-      <motion.div
-        className="absolute inset-0 flex flex-col justify-end p-5 z-10"
-        animate={{ opacity: isFlipped ? 0 : 1 }}
-        transition={{ duration: 0.2 }}
-      >
-        <p className="text-white/70 text-xs uppercase tracking-widest mb-1 font-sans">
-          {cat.label}
-        </p>
-        {card.size === 'large' && (
-          <p className="text-white/40 text-sm font-sans">
-            {cat.projects.length} projects
-          </p>
-        )}
-      </motion.div>
-
-      {/* Flipped view — project list */}
-      <motion.div
-        className="absolute inset-0 flex flex-col justify-start p-5 z-10"
-        animate={{ opacity: isFlipped ? 1 : 0 }}
-        transition={{ duration: 0.2, delay: isFlipped ? 0.15 : 0 }}
-      >
-        <p className="text-white/40 text-xs uppercase tracking-widest mb-3 font-sans">
-          {cat.label}
-        </p>
-        <div className="flex flex-col gap-2">
-          {cat.projects.map((proj, i) => (
-            <div key={i} className="border-b border-white/10 pb-2 last:border-0">
-              <p className="text-white text-sm font-sans font-medium leading-tight">{proj.title}</p>
-              <p className="text-white/40 text-xs font-sans">{proj.desc} · {proj.year}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Accent dot */}
-      <div
-        className="absolute top-4 right-4 w-2 h-2 rounded-full z-20"
-        style={{ backgroundColor: cat.accent }}
+      {/* 3rd card — accent color, furthest back */}
+      <div className='rounded-2xl border-blue-100 border'
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'black',
+          opacity: 1
+        }}
       />
-    </motion.div>
+
+      {/* 2nd card — white, middle layer */}
+      <div className='rounded-2xl border-cyan-100 border'
+        style={{
+          position: 'absolute',
+          top: '8px',
+          left: '8px',
+          right: '-6px',
+          bottom: '-6px',
+          backgroundColor: 'white',
+          opacity: 1,
+        }}
+      />
+
+      {/* Top card — fills the padding area */}
+      <motion.div
+        ref={ref}
+        className="absolute rounded-2xl overflow-hidden cursor-pointer"
+        style={{
+          top: '16px',
+          left: '16px',
+          right: '-12px',
+          bottom: '-12px',
+        }}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        onClick={() => onClick(card, index)}
+        animate={{
+          scale: isFlipped ? 1.02 : 1,
+          borderColor: isActive ? 'rgba(255,255,255,0.4)' : 'rgba(255,255,255,0.1)',
+        }}
+        transition={{ duration: 0.3 }}
+      >
+        {/* Background — image if available, gradient fallback */}
+        {cat.image ? (
+          <>
+            <Image
+              src={cat.image}
+              alt={cat.label}
+              fill
+              className={cat.imageClass}
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+             <div className="absolute inset-0 border border-black rounded-2xl outline-none"/>
+          </>
+        ) : (
+          <>
+            <div className={`absolute inset-0 bg-gradient-to-br ${cat.color} opacity-60`} />
+            <div className="absolute inset-0 bg-black/30" />
+          </>
+        )}
+
+        {/* Default view — category label */}
+        <motion.div
+          className="absolute inset-0 flex flex-col justify-end p-5 z-10"
+          animate={{ opacity: isFlipped ? 0 : 1 }}
+          transition={{ duration: 0.2 }}
+        >
+         {/* Frosted glass pill behind text */}
+          <div className="-mb-5 -ml-5  px-5 py-3 pr-35
+            sm:mr-75 md:mr-40 lg:mr-75
+            backdrop-blur-md bg-white/10
+            rounded-tr-2xl rounded-bl-2xl border-black border-b border-s">
+            <p className="text-white/100 text-s uppercase tracking-widest mb-1 font-sans [text-shadow:0_0_0.6px_black,0_0_0.5px_black]">
+                {cat.label}
+            </p>
+            {card.size === 'large' && (
+                <p className="text-white/50 text-sm font-sans">
+                {cat.projects.length} projects
+                </p>
+            )}
+          </div>
+        </motion.div>
+
+        {/* Flipped view — project list */}
+        <motion.div
+          className="absolute inset-0 flex flex-col justify-start p-5 z-10"
+          animate={{ opacity: isFlipped ? 1 : 0 }}
+          transition={{ duration: 0.2, delay: isFlipped ? 0.15 : 0 }}
+        >
+          <p className="text-white/40 text-xs uppercase tracking-widest mb-3 font-sans">
+            {cat.label}
+          </p>
+          <div className="flex flex-col gap-2">
+            {cat.projects.map((proj, i) => (
+              <div key={i} className="border-b border-white/10 pb-2 last:border-0">
+                <p className="text-white text-sm font-sans font-medium leading-tight">{proj.title}</p>
+                <p className="text-white/40 text-xs font-sans">{proj.desc} · {proj.year}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Accent dot */}
+        <div
+          className="absolute top-4 right-4 w-2 h-2 rounded-full z-20"
+          style={{ backgroundColor: cat.accent }}
+        />
+      </motion.div>
+    </div>
   );
 }
 
@@ -208,35 +242,32 @@ export default function WorkPage() {
     setRippleOrder(orders);
   };
 
-  // ===================================================
-
   return (
     <main className="bg-work min-h-screen pt-28 pb-20 px-6 md:px-10">
       <div className="max-w-5xl mx-auto">
-        <div className="m-2 mb-3 pb-3 outline-4 outline-solid outline-black rounded-xl
-        border-solid border-e-olive-500 border-b-olive-500 border-t-olive-400 border-s-olive-400 border-2">
+
+        {/* Header */}
+        <div className="m-1 mb-3 pb-3 outline-4 outline-solid outline-black rounded-xl
+          border-solid border-e-olive-500 border-b-olive-500 border-t-olive-400 border-s-olive-400 border-2">
           <h1 className="text-7xl sm:text-8xl md:text-9xl
             font-inter font-extrabold text-black tracking-[-0.06em]
             mb-px p-3 whitespace-normal
             text-shadow-[0.3px_0.3px_0px] text-shadow-neutral-800
             h-[1.1em] overflow-hidden">
-              <span>PORTFOLIO</span>
-              {/* This will now wrap "underneath" the first line and disappear */}
-              <span className="inline-block whitespace-pre"> ✱</span>
-              <span className="inline-block whitespace-pre"> ✱</span>
-                            <span className="inline-block whitespace-pre"> ✱</span>
-
+            <span>PORTFOLIO</span>
+            <span className="inline-block whitespace-pre"> ✱</span>
+            <span className="inline-block whitespace-pre"> ✱</span>
+            <span className="inline-block whitespace-pre"> ✱</span>
           </h1>
           <p className="font-inter text-black font-bold tracking-wider
-                text-lg sm:text-2xl md:text-3xl
-                p-3 pl-4 -mt-3
-                h-[1.8em] overflow-hidden">
+            text-lg sm:text-2xl md:text-3xl
+            p-3 pl-4 -mt-3
+            h-[1.8em] overflow-hidden">
             <span className="text-highlight opacity-75
-                [text-shadow:_0_0_0.5px_black,_0_0_0.5px_black,_0_0_0.5px_black,_0_0_0.5px_black]">
-                selected
+              [text-shadow:0_0_0.5px_black,0_0_0.5px_black,0_0_0.5px_black,0_0_0.5px_black]">
+              selected
             </span>
             <span> items from our body of work</span>
-            {/* This will now wrap "underneath" the first line and disappear */}
             <span className="inline-block whitespace-pre">  ✱</span>
             <span className="inline-block whitespace-pre">  ✱</span>
             <span className="inline-block whitespace-pre">  ✱</span>
@@ -248,19 +279,20 @@ export default function WorkPage() {
             <span className="inline-block whitespace-pre">  ✱</span>
             <span className="inline-block whitespace-pre">  ✱</span>
           </p>
-
         </div>
 
+        {/* Status text */}
         <div>
-            <p className="text-white/40 font-sans text-sm mt-1">
-                {activeCategory
-                ? `Showing ${categories[activeCategory].label} — click again to reset`
-                : 'Click any card to explore that category'}
-            </p>
-            <span></span>
+          <p className="text-white/40 font-sans text-sm mt-1 mb-2">
+            {activeCategory
+              ? `Showing ${categories[activeCategory].label} — click again to reset`
+              : 'Click any card to explore that category'}
+          </p>
+          <span></span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-[200px_200px_200px] gap-4">
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-[200px_200px_200px] gap-7">
           {gridCards.map((card, index) => (
             <Card
               key={card.id}
@@ -274,6 +306,7 @@ export default function WorkPage() {
           ))}
         </div>
 
+        {/* Reset button */}
         {activeCategory && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
