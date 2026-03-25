@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const categories = {
   web: {
-    label: 'Web Dev',
+    label: 'web development',
     color: 'from-green-900 to-green-700',
     accent: '#639922',
     image: '/images/np/np_home2.jpeg',
@@ -17,7 +17,7 @@ const categories = {
     ],
   },
   brand: {
-    label: 'Brand Creation',
+    label: 'brand creation',
     color: 'from-orange-900 to-orange-700',
     accent: '#d85a30',
     image: '/images/brand/brand_logo2.jpeg',
@@ -29,7 +29,7 @@ const categories = {
     ],
   },
   design: {
-    label: 'Original Design',
+    label: 'original design',
     color: 'from-purple-900 to-purple-700',
     accent: '#7f77dd',
     image: '/images/designs/design3.jpeg',
@@ -41,7 +41,7 @@ const categories = {
     ],
   },
   print: {
-    label: 'Apparel',
+    label: 'apparel and custom merchandise',
     color: 'from-teal-900 to-teal-700',
     accent: '#1d9e75',
     image: '/images/print/print_image2.jpeg',
@@ -52,7 +52,7 @@ const categories = {
     ],
   },
   shop: {
-    label: 'Shop Creation',
+    label: 'shop creation',
     color: 'from-amber-900 to-amber-700',
     accent: '#ba7517',
     image: '/images/np/np_store.jpeg',
@@ -100,28 +100,29 @@ function Card({ card, index, activeCategory, onClick, rippleIndex, rippleOrder }
       style={{ padding: '8px 4px 4px 8px' }}
     >
       {/* 3rd card — accent color, furthest back */}
-      <div className='rounded-2xl border-blue-100 border'
+      <div className='rounded-2xl border-black border-2'
         style={{
           position: 'absolute',
           top: 0,
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundColor: 'black',
+          backgroundColor: '#6e8789',
           opacity: 1
         }}
       />
 
+
       {/* 2nd card — white, middle layer */}
-      <div className='rounded-2xl border-cyan-100 border'
+      <div className='rounded-2xl border-gray-700 border-1'
         style={{
           position: 'absolute',
-          top: '8px',
-          left: '8px',
-          right: '-6px',
-          bottom: '-6px',
-          backgroundColor: 'white',
-          opacity: 1,
+          top: '-0.2rem',
+          left: '-0.2rem',
+          right: '0.4rem',
+          bottom: '0.4rem',
+          backgroundColor: '#c9e2e4',
+          opacity: .8,
         }}
       />
 
@@ -130,10 +131,10 @@ function Card({ card, index, activeCategory, onClick, rippleIndex, rippleOrder }
         ref={ref}
         className="absolute rounded-2xl overflow-hidden cursor-pointer"
         style={{
-          top: '16px',
-          left: '16px',
-          right: '-12px',
-          bottom: '-12px',
+          top: '-0.4rem',
+          left: '-0.4rem',
+          right: '0.8rem',
+          bottom: '0.8rem',
         }}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
@@ -154,7 +155,7 @@ function Card({ card, index, activeCategory, onClick, rippleIndex, rippleOrder }
               className={cat.imageClass}
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-             <div className="absolute inset-0 border border-black rounded-2xl outline-none"/>
+             <div className="absolute inset-0 border-1 border-[#9d7831] rounded-2xl outline-none"/>
           </>
         ) : (
           <>
@@ -170,18 +171,73 @@ function Card({ card, index, activeCategory, onClick, rippleIndex, rippleOrder }
           transition={{ duration: 0.2 }}
         >
          {/* Frosted glass pill behind text */}
-          <div className="-mb-5 -ml-5  px-5 py-3 pr-35
-            sm:mr-75 md:mr-40 lg:mr-75
-            backdrop-blur-md bg-white/10
-            rounded-tr-2xl rounded-bl-2xl border-black border-b border-s">
-            <p className="text-white/100 text-s uppercase tracking-widest mb-1 font-sans [text-shadow:0_0_0.6px_black,0_0_0.5px_black]">
-                {cat.label}
+          <div className="-mb-3 -ml-5 -mr-5 -pr-5 pt-3 pb-2
+            backdrop-blur-md bg-white/10 shadow-sm shadow-neutral-500">
+            <p className="text-black/70 text-md font-sans font-extrabold edt h-[1.8em] overflow-hidden">
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">  . . . . .  </span>
+                <span>{cat.label}</span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">  . . . . </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. . . . </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. . . . </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+                <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
+
+
+
+
+
             </p>
-            {card.size === 'large' && (
-                <p className="text-white/50 text-sm font-sans">
-                {cat.projects.length} projects
-                </p>
-            )}
+
           </div>
         </motion.div>
 
@@ -205,11 +261,11 @@ function Card({ card, index, activeCategory, onClick, rippleIndex, rippleOrder }
         </motion.div>
 
         {/* Accent dot */}
-        <div
-          className="absolute top-4 right-4 w-2 h-2 rounded-full z-20"
-          style={{ backgroundColor: cat.accent }}
-        />
-      </motion.div>
+            <div
+            className="absolute top-4 right-4 w-2 h-2 rounded-full z-20"
+            style={{ backgroundColor: cat.accent }}
+            />
+        </motion.div>
     </div>
   );
 }
