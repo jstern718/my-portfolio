@@ -15,7 +15,7 @@ export default function Nav() {
       {/* Desktop links */}
       <div className="hidden md:flex gap-10 font-sans text-sm tracking-widest text-white/70">
         <Link href="/work" className="hover:text-white transition-colors">portfolio</Link>
-        <Link href="/education" className="hover:text-white transition-colors">education</Link>
+        <Link href="/shirts" className="hover:text-white transition-colors">best shirt forward</Link>
         <Link href="#contact" className="hover:text-white transition-colors">contact</Link>
       </div>
 
@@ -33,7 +33,7 @@ export default function Nav() {
       {menuOpen && (
         <div className="absolute top-full left-0 right-0 bg-primary border-t border-white/10 py-6 flex flex-col items-center gap-6 font-sans text-sm uppercase tracking-widest text-white/70 md:hidden">
           <Link href="/work" onClick={() => setMenuOpen(false)} className="hover:text-white transition-colors">work</Link>
-          <Link href="/education" onClick={() => setMenuOpen(false)} className="hover:text-white transition-colors">education</Link>
+          <Link href="/clothes" onClick={() => setMenuOpen(false)} className="hover:text-white transition-colors">education</Link>
           <Link href="#contact" onClick={() => setMenuOpen(false)} className="hover:text-white transition-colors">contact</Link>
         </div>
       )}

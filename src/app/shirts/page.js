@@ -336,39 +336,113 @@ export default function WorkPage() {
         {/* Header */}
         <div className="m-1 mb-3 pb-3 outline-4 outline-solid outline-black rounded-xl
           border-solid border-e-olive-500 border-b-olive-500 border-t-olive-400 border-s-olive-400 border-2">
-          <h1 className="text-6xl sm:text-7xl md:text-8xl
-            font-inter font-extrabold text-black tracking-[-0.07em]
-            mb-px p-3 whitespace-normal
+          <h1 className="text-8xl sm:text-9xl md:text-10xl
+            font-inter font-extrabold text-black
+            -mb-9 p-3 whitespace-normal
             text-shadow-[0.3px_0.3px_0px] text-shadow-neutral-800
-            h-[1.1em] overflow-hidden">
-            <span>PORTFOLIO</span>
+            h-[1.2em] overflow-hidden">
+            <span>BEST</span>
             <span className="inline-block whitespace-pre"> ✱</span>
             <span className="inline-block whitespace-pre"> ✱</span>
             <span className="inline-block whitespace-pre"> ✱</span>
             <span className="inline-block whitespace-pre"> ✱</span>
             <span className="inline-block whitespace-pre"> ✱</span>
             <span className="inline-block whitespace-pre"> ✱</span>
-            <span className="inline-block whitespace-pre"> ✱</span>
+        </h1>
+
+        <h1 className="text-7xl sm:text-8xl md:text-9xl
+            font-inter font-extrabold text-black
+            -mb-7 p-3 xs:pt-4 sm:pt-4 md:pt-3 lg:pt-3 whitespace-normal
+            text-shadow-[0.3px_0.3px_0px] text-shadow-neutral-800
+            h-[1.2em] overflow-hidden">
+            <span className="text-white">✱</span>
+            <span>SHIRT</span>
+            <span className="text-white inline-block whitespace-pre">✱</span>
+            <span className="text-white inline-block whitespace-pre"> ✱</span>
+            <span className="text-white inline-block whitespace-pre"> ✱</span>
+            <span className="text-white inline-block whitespace-pre"> ✱</span>
+            <span className="text-white inline-block whitespace-pre"> ✱</span>
+            <span className="text-white inline-block whitespace-pre"> ✱</span>
+            <span className="text-white inline-block whitespace-pre"> ✱</span>
           </h1>
-          <p className="font-inter text-black font-bold tracking-wider
-            text-lg sm:text-2xl md:text-3xl
-            p-3 pl-4 -mt-3
-            h-[1.8em] overflow-hidden">
+          <h1 className="text-6xl sm:text-7xl md:text-8xl
+            font-inter font-extrabold text-black tracking-[-0.09em]
+            -mb-3 p-3 xs:pt-5 sm:pt-4 md:pt-3 lg:pt-3 whitespace-normal
+            text-shadow-[0.3px_0.3px_0px] text-shadow-neutral-800
+            h-[1.2em] overflow-hidden">
+            <span>FORWARD</span>
+            <span className="inline-block whitespace-pre"> ✱ </span>
+            <span className="inline-block whitespace-pre"> ✱ </span>
+            <span className="inline-block whitespace-pre"> ✱ </span>
+            <span className="inline-block whitespace-pre"> ✱ </span>
+            <span className="inline-block whitespace-pre"> ✱ </span>
+            <span className="inline-block whitespace-pre"> ✱ </span>
+            <span className="inline-block whitespace-pre"> ✱ </span>
+            <span className="inline-block whitespace-pre"> ✱ </span>
+          </h1>
+          <p className="font-inter text-white font-bold tracking-wider
+            text-xl sm:text-3xl md:text-4xl
+            p-3 pl-4 mt-2
+            h-[3.4em] sm:h-[2.9em] md:h-[2.7em] overflow-hidden">
             <span className="text-highlight opacity-75
               [text-shadow:0_0_0.5px_black,0_0_0.5px_black,0_0_0.5px_black,0_0_0.5px_black]">
-              selected
+              AKA
             </span>
-            <span> items from our body of work</span>
-            <span className="inline-block whitespace-pre">  ✱</span>
-            <span className="inline-block whitespace-pre">  ✱</span>
-            <span className="inline-block whitespace-pre">  ✱</span>
-            <span className="inline-block whitespace-pre">  ✱</span>
-            <span className="inline-block whitespace-pre">  ✱</span>
-            <span className="inline-block whitespace-pre">  ✱</span>
-            <span className="inline-block whitespace-pre">  ✱</span>
-            <span className="inline-block whitespace-pre">  ✱</span>
-            <span className="inline-block whitespace-pre">  ✱</span>
-            <span className="inline-block whitespace-pre">  ✱</span>
+            <span> Superior-quality, Custom-designed Clothes & Swag</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+          </p>
+          <p className="font-inter text-black font-bold tracking-wider
+            text-md sm:text-xl md:text-2xl
+            p-3 pl-4 -mt-1
+            h-[3.8em] sm:h-[3.6em] md:h-[3.4em] overflow-hidden">
+            <span> HELPING SMALL BUSINESSES AND PRIVATE CUSTOMERS TO PUT THEIR BEST FOOT FORWARD</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
+            <span className="text-black inline-block whitespace-pre">  ✱</span>
           </p>
         </div>
 
