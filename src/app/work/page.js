@@ -155,7 +155,8 @@ function Card({ card, index, activeCategory, onClick, rippleIndex, rippleOrder }
               className={cat.imageClass}
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-             <div className="absolute inset-0 border-1 border-[#9d7831] rounded-2xl outline-none"/>
+             <div className="absolute inset-0 border-1 border-[#9d7831]
+             rounded-2xl outline-none bg-linear-to-b from-gray-800/20 via-work/10 via-60% to-gray-900/60"/>
           </>
         ) : (
           <>
@@ -172,7 +173,7 @@ function Card({ card, index, activeCategory, onClick, rippleIndex, rippleOrder }
         >
          {/* Frosted glass pill behind text */}
           <div className="-mb-3 -ml-5 -mr-5 -pr-5 pt-3 pb-2
-            backdrop-blur-md bg-white/10 shadow-sm shadow-neutral-500">
+            backdrop-blur-md bg-white/20 shadow-sm shadow-neutral-500">
             <p className="text-black/70 text-md font-sans font-extrabold edt h-[1.8em] overflow-hidden">
                 <span className="text-gray-700 text-xs inline-block whitespace-pre">  . . . . .  </span>
                 <span>{cat.label}</span>
@@ -231,13 +232,7 @@ function Card({ card, index, activeCategory, onClick, rippleIndex, rippleOrder }
                 <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
                 <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
                 <span className="text-gray-700 text-xs inline-block whitespace-pre">. </span>
-
-
-
-
-
             </p>
-
           </div>
         </motion.div>
 
@@ -348,18 +343,21 @@ export default function WorkPage() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-[200px_200px_200px] gap-7">
-          {gridCards.map((card, index) => (
-            <Card
-              key={card.id}
-              card={card}
-              index={index}
-              activeCategory={activeCategory}
-              onClick={handleCardClick}
-              rippleIndex={rippleIndex}
-              rippleOrder={rippleOrder ? rippleOrder[index] : null}
-            />
-          ))}
+         <div className="m-1 mb-3 p-4 pl-5 pt-5 outline-4 outline-solid outline-black rounded-xl
+          border-solid border-e-olive-500 border-b-olive-500 border-t-olive-400 border-s-olive-400 border-2">
+            <div className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-[200px_200px_200px] gap-7">
+            {gridCards.map((card, index) => (
+                <Card
+                key={card.id}
+                card={card}
+                index={index}
+                activeCategory={activeCategory}
+                onClick={handleCardClick}
+                rippleIndex={rippleIndex}
+                rippleOrder={rippleOrder ? rippleOrder[index] : null}
+                />
+            ))}
+            </div>
         </div>
 
         {/* Reset button */}
