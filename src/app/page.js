@@ -85,13 +85,13 @@ export default function Home() {
           >
             {/* Header block */}
               <div className="max-w-5xl mt-50 mx-auto">
-                <div className="bg-white/90 m-1 mb-3 pt-3 pb-3 outline-4 outline-solid outline-black rounded-xl
+                <div className="bg-work/70 m-1 mb-3 pt-3 pb-3 outline-4 outline-solid outline-black rounded-xl
                 border-solid border-e-olive-500 border-b-olive-500 border-t-olive-400 border-s-olive-400 border-2">
                 <h1 className="text-xl sm:text-2xl md:text-3xl
                     font-normal text-black
                     mb-2 p-3 whitespace-normal
                     text-shadow-[0.3px_0.3px_0px] text-shadow-neutral-800
-                    h-[1.7em] overflow-hidden">
+                    h-[1.8em] overflow-hidden">
                     <span className="inline-block whitespace-pre">✱</span>
                     <span className="inline-block whitespace-pre"> ✱ </span>
                     <span className="text-white font-inter opacity-85 text-shadow-black [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black]">
@@ -107,10 +107,9 @@ export default function Home() {
                 <hr class="border-gray-400 border-1"/>
                 <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl
                     font-inter font-extrabold text-black
-                    -mb-2 p-4 xs:pt-4 sm:pt-4 md:pt-3 lg:pt-3 whitespace-normal
+                    -mb-2 sm:-mb-3 p-4 xs:pt-4 sm:pt-4 md:pt-3 lg:pt-3 whitespace-normal
                     text-shadow-[0.3px_0.3px_0px] text-shadow-neutral-800
-                    h-[1.3em] sm:h-[1.2em] md:h-[1.1em] overflow-hidden">
-                    UNCOMMON
+                    h-[1.3em] sm:h-[1.2em] md:h-[1.1em] overflow-hidden">UNCOMMON
                     <span className="text-blue-50 opacity-70 text-shadow-black [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black]"> ✱ </span>
                     <span className="text-blue-50 opacity-70 text-shadow-black [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black] inline-block whitespace-pre"> ✱</span>
                     <span className="text-blue-50 opacity-70 text-shadow-black [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black] inline-block whitespace-pre"> ✱</span>
@@ -120,7 +119,7 @@ export default function Home() {
                 </h1>
                 <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl
                     font-inter font-extrabold text-black tracking-[0.1em]
-                    -mb-2 p-3 sm:pt-4 md:pt-3 lg:pt-3 whitespace-normal
+                    -mb-3 p-3 sm:pt-4 md:pt-3 lg:pt-3 whitespace-normal
                     text-shadow-[0.3px_0.3px_0px] text-shadow-neutral-800
                     h-[1.3em] sm:h-[1.4em] md:h-[1.1em] overflow-hidden">
                     <span className="inline-block whitespace-pre">✱ </span>
@@ -136,8 +135,7 @@ export default function Home() {
                     h-[1.8em] sm:h-[1.6em] md:h-[1.3em] overflow-hidden">
                     <span className="text-white opacity-50 inline-block whitespace-pre [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black]">✱</span>
                     <span className="text-white opacity-50 inline-block whitespace-pre [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black]">  ✱  </span>
-                    <span className="text-black opacity-90
-                    [text-shadow:0_0_0.1rem_white,0_0_0.1rem_white,0_0_0.1rem_white,0_0_0.1rem_white]">
+                    <span className="text-black opacity-90">
                     & DEVELOPMENT
                     </span>
                     {items.map((item, index) => (
@@ -149,10 +147,10 @@ export default function Home() {
                     font-inter font-extrabold text-black tracking-[0.03em]
                     mb-1 -mt-2 p-3 s:pt-5 sm:pt-4 md:pt-3 lg:pt-3 whitespace-normal
                     text-shadow-[0.3px_0.3px_0px] text-shadow-neutral-800
-                    h-[2.1em] sm:h-[2em] md:h-[1.6em] overflow-hidden">
-                    <span className="text-black opacity-65 inline-block whitespace-pre">✱</span>
+                    h-[1.6em] sm:h-[1.8em] md:h-[1.3em] overflow-hidden">
+                    <span className="text-black opacity-65 inline-block whitespace-pre">*</span>
                     {items.map((item, index) => (
-                        <span className="text-black opacity-65 inline-block whitespace-pre" key={index}>  ✱</span>
+                        <span className="text-black opacity-65 inline-block whitespace-pre" key={index}>  *</span>
                     ))}
 
                 </h1>
