@@ -65,9 +65,6 @@ export default function Home() {
     setSubmitted(true);
   };
 
-  let items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
-
-
   return (
     <>
       <section ref={sectionRef} className="relative min-h-[600vh] bg-primary">
@@ -84,103 +81,16 @@ export default function Home() {
             className="relative z-10 px-8 md:px-20 w-full pt-24 flex flex-col items-start lg:items-center lg:text-center"
           >
             {/* Header block */}
-              <div className="max-w-5xl mt-50 mx-auto">
-                <div className="bg-white/90 m-1 mb-3 pt-3 pb-3 outline-4 outline-solid outline-black rounded-xl
-                border-solid border-e-olive-500 border-b-olive-500 border-t-olive-400 border-s-olive-400 border-2">
-                <h1 className="text-xl sm:text-2xl md:text-3xl
-                    font-normal text-black
-                    mb-2 p-3 whitespace-normal
-                    text-shadow-[0.3px_0.3px_0px] text-shadow-neutral-800
-                    h-[1.7em] overflow-hidden">
-                    <span className="inline-block whitespace-pre">✱</span>
-                    <span className="inline-block whitespace-pre"> ✱ </span>
-                    <span className="text-white font-inter opacity-85 text-shadow-black [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black]">
-                    To stand out,  </span>
-                    <span className="text-white font-knewave text-shadow-black [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black]">
-                    COMMON GOODS  </span>
-                    <span className="text-white font-inter opacity-85 text-shadow-black [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black]">
-                    require</span>
-                    {items.map((item, index) => (
-                        <span className="inline-block whitespace-pre" key={index}> ✱</span>
-                    ))}
-                </h1>
-                <hr class="border-gray-400 border-1"/>
-                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl
-                    font-inter font-extrabold text-black
-                    -mb-2 p-4 xs:pt-4 sm:pt-4 md:pt-3 lg:pt-3 whitespace-normal
-                    text-shadow-[0.3px_0.3px_0px] text-shadow-neutral-800
-                    h-[1.3em] sm:h-[1.2em] md:h-[1.1em] overflow-hidden">
-                    UNCOMMON
-                    <span className="text-blue-50 opacity-70 text-shadow-black [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black]"> ✱ </span>
-                    <span className="text-blue-50 opacity-70 text-shadow-black [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black] inline-block whitespace-pre"> ✱</span>
-                    <span className="text-blue-50 opacity-70 text-shadow-black [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black] inline-block whitespace-pre"> ✱</span>
-                    <span className="text-blue-50 opacity-70 text-shadow-black [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black] inline-block whitespace-pre"> ✱</span>
-                    <span className="text-blue-50 opacity-70 text-shadow-black [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black] inline-block whitespace-pre"> ✱</span>
-
-                </h1>
-                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl
-                    font-inter font-extrabold text-black tracking-[0.1em]
-                    -mb-2 p-3 sm:pt-4 md:pt-3 lg:pt-3 whitespace-normal
-                    text-shadow-[0.3px_0.3px_0px] text-shadow-neutral-800
-                    h-[1.3em] sm:h-[1.4em] md:h-[1.1em] overflow-hidden">
-                    <span className="inline-block whitespace-pre">✱ </span>
-                    <span className="text-highlight opacity-90">DESIGN</span>
-                    <span className="inline-block whitespace-pre"> ✱ </span>
-                    <span className="inline-block whitespace-pre">✱ </span>
-                    <span className="inline-block whitespace-pre">✱ </span>
-                    <span className="inline-block whitespace-pre">✱ </span>
-                </h1>
-                <p className="font-inter text-white font-bold tracking-[-0.04em]
-                    text-3xl sm:text-4xl md:text-5xl lg:5xl xl:6xl
-                    p-3 pl-4 mb-2
-                    h-[1.8em] sm:h-[1.6em] md:h-[1.3em] overflow-hidden">
-                    <span className="text-white opacity-50 inline-block whitespace-pre [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black]">✱</span>
-                    <span className="text-white opacity-50 inline-block whitespace-pre [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black]">  ✱  </span>
-                    <span className="text-black opacity-90
-                    [text-shadow:0_0_0.1rem_white,0_0_0.1rem_white,0_0_0.1rem_white,0_0_0.1rem_white]">
-                    & DEVELOPMENT
-                    </span>
-                    {items.map((item, index) => (
-                        <span className="text-white opacity-50 inline-block whitespace-pre [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black]" key={index}>  ✱</span>
-                    ))}
-                </p>
-                <hr class="border-gray-400 border-1 -mb-1"/>
-                <h1 className="text-lg sm:text-2xl md:text-3xl
-                    font-inter font-extrabold text-black tracking-[0.03em]
-                    mb-1 -mt-2 p-3 s:pt-5 sm:pt-4 md:pt-3 lg:pt-3 whitespace-normal
-                    text-shadow-[0.3px_0.3px_0px] text-shadow-neutral-800
-                    h-[2.1em] sm:h-[2em] md:h-[1.6em] overflow-hidden">
-                    <span className="text-black opacity-65 inline-block whitespace-pre">✱</span>
-                    {items.map((item, index) => (
-                        <span className="text-black opacity-65 inline-block whitespace-pre" key={index}>  ✱</span>
-                    ))}
-
-                </h1>
-                <hr class="border-gray-400 border-1"/>
-                <p className="font-inter text-black font-bold tracking-[0.01em]
-                    text-md sm:text-xl md:text-2xl
-                    p-3 pl-4 -mb-3
-                    h-[2em] sm:h-[2em] md:h-[2em] overflow-hidden">
-                    <span className="text-black inline-block whitespace-pre">✱</span>
-                    <span className="text-black inline-block whitespace-pre">   ✱  </span>
-                    <span> helping small businesses and private</span>
-                    {items.map((item, index) => (
-                        <span className="text-white/97 inline-block whitespace-pre [text-shadow:.2_.2_.2px_black,-.2_-.2_.2px_black]" key={index}>  ✱ </span>
-                    ))}
-                </p>
-
-                <p className="font-inter text-black font-bold tracking-[-0.01em]
-                    text-md sm:text-xl md:text-2xl
-                    p-3 pl-4
-                    h-[2em] sm:h-[2em] md:h-[2em] overflow-hidden">
-                    <span className="text-black inline-block whitespace-pre">✱  </span>
-                    <span>customers to put their best foot forward</span>
-                    <span className="text-black inline-block whitespace-pre">     ✱</span>
-                    {items.map((item, index) => (
-                        <span className="text-black inline-block whitespace-pre" key={index}> ✱ </span>
-                    ))}
-                </p>
-              </div>
+            <div className="opacity-90 py-4">
+              <p className="text-highlight font-sans text-sm tracking-widest mb-3 opacity-70">
+                freelance consultancy
+              </p>
+              <h1 className="font-display text-6xl font-bold tracking-widest text-white leading-tight mb-0">
+                UNCOMMON
+              </h1>
+              <h2 className="font-display text-4xl font-thin -tracking-tighter text-white leading-tight mb-3 pt-0">
+                Design & Development
+              </h2>
             </div>
 
             {/* Body text */}
