@@ -356,7 +356,7 @@ export default function WorkPage() {
                  <span className="inline-block whitespace-pre" key={index}> ✱</span>
             ))}
         </h1>
-        <hr class="border-gray-400 border-1"/>
+        <hr className="border-gray-400 border-1"/>
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl
             font-inter font-extrabold text-black
             -mb-2 p-4 xs:pt-4 sm:pt-4 md:pt-3 lg:pt-3 whitespace-normal
