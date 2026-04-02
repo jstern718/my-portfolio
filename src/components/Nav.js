@@ -33,7 +33,7 @@ export default function Nav() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="absolute top-full left-0 right-0 bg-primary border-t border-white/10 py-6 flex flex-col items-center gap-6 font-sans text-sm uppercase tracking-widest text-white/70 md:hidden">
-          <Link href="/work" onClick={() => setMenuOpen(false)} className="hover:text-white transition-colors">work</Link>
+          <Link href="/portfolio" onClick={() => setMenuOpen(false)} className="hover:text-white transition-colors">portfolio</Link>
           <Link href="/shirts" onClick={() => setMenuOpen(false)} className="hover:text-white transition-colors">best shirt forward</Link>
           <Link href="/experiment" onClick={() => setMenuOpen(false)} className="hover:text-white transition-colors">experiment</Link>
           <Link href="#contact" onClick={() => setMenuOpen(false)} className="hover:text-white transition-colors">contact</Link>
