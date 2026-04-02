@@ -114,59 +114,46 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ── 2. BODY SECTION with 7 paragraphs ── */}
-      {/* ── top of BODY SECTION ── */}
-
+      {/* ── 2. BODY SECTION with 4 paragraphs ── */}
       <div className="px-8 md:px-20 flex flex-col items-start lg:items-center">
 
         {/* Para 1 */}
-        <div className="max-w-md w-full flex flex-col gap-6 pb-10 font-sans">
+        <div className="max-w-md w-full flex flex-col gap-6 pb-10">
           <p
             ref={para1Ref}
-            className={`text-white text-2xl tracking-tight leading-normal font-light ${paraBase} ${para1Visible ? paraShown : paraHidden}`}
+            className={`text-white text-2xl tracking-tight font-light ${paraBase} ${para1Visible ? paraShown : paraHidden}`}
           >
             Design is no longer optional. Every detail, from your online presence to the logo on your shirt, tells a story. But does it tell the story you need it to?
           </p>
         </div>
 
         {/* Para 2 */}
-        <div className="max-w-md w-full flex flex-col gap-6 pb-10 font-sans">
+        <div className="max-w-md w-full flex flex-col gap-6 pb-10">
           <p
             ref={para2Ref}
-            className={`text-white text-xl tracking-tight leading-normal font-light ${paraBase} ${para2Visible ? paraShown : paraHidden}`}
+            className={`text-white text-xl font-light ${paraBase} ${para2Visible ? paraShown : paraHidden}`}
           >
             When you have a small business, every dollar counts. It is reasonable to ask whether you really need to bring in someone from the outside in order to make your business stand out?
           </p>
         </div>
-      </div>
 
-      {/* Ghostpage Area*/}
-      <div className="bg-white mb-10 max-w-md w-full flex flex-col gap-6 mx-auto">
-        <p className="text-white/70 text-lg tracking-tight font-light mb-3 py-50">
-            x
-        </p>
-      </div>
-
-      {/* ── bottom of BODY SECTION ── */}
-
-      <div className="px-8 md:px-20 flex flex-col items-start lg:items-center">
-         {/* Para 3 */}
-         <div className="max-w-md w-full flex flex-col gap-6 pb-10 font-sans">
+        {/* Para 3 */}
+         <div className="max-w-md w-full flex flex-col gap-6 pb-10">
           <p
             ref={para3Ref}
-            className={`text-white text-xl tracking-tight leading-normal font-light ${paraBase} ${para3Visible ? paraShown : paraHidden}`}
+            className={`text-white text-xl font-light ${paraBase} ${para3Visible ? paraShown : paraHidden}`}
           >
-            While it is true that, with all the tools now available, you would be able to create something pretty nice; there are major caveats. First you have to find the time to work on it.
+            While it is true that, With all the tools now available, you would be able to create something pretty nice; there are major caveats. First you have to find the time to work on it.
              You could build a website that gets the information you need it to across. You could put the name of your business on a t-shirt or hat. But just doing the bare minimum is not how
              we get things done here. We obsess over every detail, not because you necessarily have to, but because we want to.
           </p>
         </div>
 
         {/* Para 4 */}
-        <div className="max-w-md w-full flex flex-col gap-6 pb-10 font-sans">
+        <div className="max-w-md w-full flex flex-col gap-6 pb-10">
           <p
             ref={para4Ref}
-            className={`text-white text-xl tracking-tight leading-normal font-light ${paraBase} ${para4Visible ? paraShown : paraHidden}`}
+            className={`text-white text-xl tracking-tight font-light ${paraBase} ${para4Visible ? paraShown : paraHidden}`}
             >
             The real issue is that a business owner, you do not have the luxury to spend your time that way. In terms of value, it is not the case that you need to know everything there is to know about website hosting or design, suppliers, printing etc. Your time is better
             spent taking advantage of the skills you have already developed to their fullest.
@@ -174,33 +161,33 @@ export default function Home() {
         </div>
 
          {/* Para 5 */}
-        <div className="max-w-md w-full flex flex-col gap-6 pb-10 font-sans">
+        <div className="max-w-md w-full flex flex-col gap-6 pb-10">
           <p
             ref={para5Ref}
-            className={`text-white text-xl tracking-tight leading-normal font-light ${paraBase} ${para5Visible ? paraShown : paraHidden}`}
+            className={`text-white text-xl tracking-tight font-light ${paraBase} ${para5Visible ? paraShown : paraHidden}`}
           >
             What's more, trying to offload the work can lead to a whole different set of problems, namely, not reaching the level of excellence that you strive to
             reach in the rest of your business.  Remember:</p>
         </div>
 
          {/* Para 6 */}
-        <div className="max-w-md w-full flex flex-col gap-6 pb-10 font-sans">
+        <div className="max-w-md w-full flex flex-col gap-6 pb-10">
           <div
             ref={para6Ref}
-            className={`text-white text-xl tracking-wide leading-normal font-medium ${paraBase} ${para6Visible ? paraShown : paraHidden}`}
+            className={`text-white text-xl tracking-tight font-light ${paraBase} ${para6Visible ? paraShown : paraHidden}`}
           >
             <p className="pb-5 indent-10 ">- Small need not be unremarkable.</p>
             <p className="pb-3 indent-10">- Common need not be commonplace.</p>
-            <p className="pb-3 text-center -indent-10 font-light">-and-</p>
+            <p className="pb-3 text-center -indent-10">-and-</p>
             <p className="indent-10">- Ordinary need not be familiar.</p>
           </div>
         </div>
 
         {/* Para 7 */}
-        <div className="max-w-md w-full flex flex-col gap-6 pb-16 font-sans">
+        <div className="max-w-md w-full flex flex-col gap-6 pb-16">
           <p
             ref={para7Ref}
-            className={`text-white text-xl tracking-tight leading-normal font-light ${paraBase} ${para7Visible ? paraShown : paraHidden}`}
+            className={`text-white text-xl tracking-tight font-light ${paraBase} ${para7Visible ? paraShown : paraHidden}`}
           >
             I help small businesses show their best face to the world, building beautiful digital experiences ... from websites and apps to original art and custom swag.
           </p>

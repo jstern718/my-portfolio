@@ -1,5 +1,5 @@
-@import "tailwindcss";
-
+@import 'tailwindcss';
+@plugin 'lightswind/plugin';
 @theme {
   /** COLORS */
   --color-primary: #444A3F;
