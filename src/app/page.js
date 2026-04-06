@@ -141,9 +141,10 @@ export default function Home() {
       </div>
 
       {/* Ghostpage Area*/}
-      <div className="bg-white mb-10 max-w-md w-full flex flex-col gap-6 mx-auto">
+      <div className="bg-white/12 mb-10 max-w-md md:max-w-2xl w-full aspect-square flex flex-col gap-6 mx-auto
+      border-2 border-white/40">
         <p className="text-white/70 text-lg tracking-tight font-light mb-3 py-50">
-            x
+
         </p>
       </div>
 
