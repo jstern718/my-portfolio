@@ -1,0 +1,73 @@
+[01;34m.[0m
+(0tqq (B[00mcomponents.json[0m
+(0tqq (B[00meslint.config.mjs[0m
+(0tqq (B[00mjsconfig.json[0m
+(0tqq (B[00mnext.config.mjs[0m
+(0tqq (B[00mpackage-lock.json[0m
+(0tqq (B[00mpackage.json[0m
+(0tqq (B[00mpostcss.config.mjs[0m
+(0tqq (B[01;34mpublic[0m
+(0x   tqq (B[00mfile.svg[0m
+(0x   tqq (B[00mglobe.svg[0m
+(0x   tqq (B[01;35mhero.jpg[0m
+(0x   tqq (B[01;34mimages[0m
+(0x   x   tqq (B[01;34mbrand[0m
+(0x   x   x   tqq (B[01;35mbrand_logo.jpeg[0m
+(0x   x   x   tqq (B[01;35mbrand_logo2.jpeg[0m
+(0x   x   x   tqq (B[01;35mlight neck logo copy.jpeg[0m
+(0x   x   x   mqq (B[01;35msixties_logo.jpeg[0m
+(0x   x   tqq (B[01;34mdesigns[0m
+(0x   x   x   tqq (B[01;35mdesign1.jpeg[0m
+(0x   x   x   tqq (B[01;35mdesign2.jpeg[0m
+(0x   x   x   mqq (B[01;35mdesign3.jpeg[0m
+(0x   x   tqq (B[01;34mpillows[0m
+(0x   x   x   tqq (B[01;35mpillow_chart.jpeg[0m
+(0x   x   x   tqq (B[01;35mpillow_home.jpeg[0m
+(0x   x   x   tqq (B[01;35mpillow_mobile_home.jpeg[0m
+(0x   x   x   mqq (B[01;35mpillow_page.jpeg[0m
+(0x   x   tqq (B[01;34mprint[0m
+(0x   x   x   tqq (B[01;35mprint_image1.jpeg[0m
+(0x   x   x   mqq (B[01;35mprint_image2.jpeg[0m
+(0x   x   tqq (B[01;34mshop[0m
+(0x   x   x   tqq (B[01;35mnp_store.jpeg[0m
+(0x   x   x   mqq (B[01;35mnp_store2.jpeg[0m
+(0x   x   mqq (B[01;34mwebsites[0m
+(0x   x       tqq (B[01;35mnp_heading.jpeg[0m
+(0x   x       tqq (B[01;35mnp_home.jpeg[0m
+(0x   x       tqq (B[01;35mnp_home2.jpeg[0m
+(0x   x       tqq (B[01;35mnp_old.jpeg[0m
+(0x   x       mqq (B[01;35mnp_services.jpeg[0m
+(0x   tqq (B[00mnext.svg[0m
+(0x   tqq (B[00mvercel.svg[0m
+(0x   mqq (B[00mwindow.svg[0m
+(0tqq (B[00mREADME.md[0m
+(0tqq (B[01;34msrc[0m
+(0x   tqq (B[01;34mapp[0m
+(0x   x   tqq (B[01;34mbackups[0m
+(0x   x   x   tqq (B[00mpage backup 1.js[0m
+(0x   x   x   tqq (B[00mpage backup 2.js[0m
+(0x   x   x   mqq (B[00mpage backup 3.js[0m
+(0x   x   tqq (B[01;34mexperiment[0m
+(0x   x   x   mqq (B[00mpage.js[0m
+(0x   x   tqq (B[00mfavicon.ico[0m
+(0x   x   tqq (B[00mglobals.css[0m
+(0x   x   tqq (B[00mlayout.js[0m
+(0x   x   tqq (B[00mpage.js[0m
+(0x   x   tqq (B[01;34mportfolio[0m
+(0x   x   x   mqq (B[00mpage.js[0m
+(0x   x   mqq (B[01;34mshirts[0m
+(0x   x       mqq (B[00mpage.js[0m
+(0x   tqq (B[01;34mcomponents[0m
+(0x   x   tqq (B[00mGhostWebpage.js[0m
+(0x   x   tqq (B[01;34mlightswind[0m
+(0x   x   x   mqq (B[00mgrid-dot-backgrounds.tsx[0m
+(0x   x   tqq (B[00mNav.js[0m
+(0x   x   mqq (B[00mScrollHijackContainer_v2.js[0m
+(0x   tqq (B[01;34mhooks[0m
+(0x   x   tqq (B[00muse-mobile.tsx[0m
+(0x   x   mqq (B[00muse-toast.tsx[0m
+(0x   tqq (B[01;34mlib[0m
+(0x   x   tqq (B[00mutils.d.ts[0m
+(0x   x   mqq (B[00mutils.js[0m
+(0x   mqq (B[00mlightswind.css[0m
+(0mqq (B[00mtree-output.txt[0m

@@ -198,8 +198,11 @@ export default function ScrollHijackContainer() {
     // To resize the box, change 70vh. min(70vh,90vw) keeps it from overflowing on narrow screens.
     <div
       ref={containerRef}
-      className="bg-white/12 mb-10 w-[min(70vh,90vw)] aspect-square flex flex-col gap-6 mx-auto
-      border-2 border-white/40 relative overflow-hidden"
+      className="bg-white mb-10
+      w-[min(70vh,90vw)] aspect-square flex flex-col gap-6 mx-auto
+      border-4 border-black/75
+      shadow-[inset_-4px_-4px_6px_rgba(106,115,98,0.4),inset_4px_3px_6px_rgba(106,115,98,0.4),inset_-11px_-10px_15px_rgba(93,102,86,0.2),inset_11px_9px_15px_rgba(93,102,86,0.2),inset_-15px_-14px_18px_rgba(0,0,0,0.06),inset_15px_13px_18px_rgba(0,0,0,0.06),inset_-20px_-18px_21px_rgba(0,0,0,0.05),inset_20px_17px_21px_rgba(0,0,0,0.05)]
+      relative overflow-hidden"
     >
       <GhostWebpage
         scrollYProgress={scrollYProgress}
