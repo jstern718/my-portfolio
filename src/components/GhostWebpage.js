@@ -81,6 +81,8 @@ export default function GhostWebpage({ scrollYProgress, ghostOpacity }) {
       {/* MOBILE: phone frame */}
       <motion.div
         style={{ opacity: chromeOpacity }}
+        // top-[12%]: frame starts 12% down the box (centers content slightly below middle).
+        // max-h-[78%]: caps height so rounded bottom corners stay visible inside the box.
         className="
           flex md:hidden
           w-[70vw] max-w-xs
@@ -88,7 +90,8 @@ export default function GhostWebpage({ scrollYProgress, ghostOpacity }) {
           rounded-[2rem] overflow-hidden
           border-4 border-white/30
           shadow-2xl bg-white/5
-          absolute top-[42%] left-1/2 -translate-x-1/2
+          absolute top-[12%] left-1/2 -translate-x-1/2
+          max-h-[78%]
         "
       >
         <div className="flex justify-center pt-2 pb-1 shrink-0">
@@ -131,14 +134,16 @@ export default function GhostWebpage({ scrollYProgress, ghostOpacity }) {
       {/* DESKTOP: browser window */}
       <motion.div
         style={{ opacity: chromeOpacity }}
+        // top-[20%]: frame starts 20% down the box (centers content slightly below middle).
+        // w-[65%]: wider than before so more of the box is filled horizontally.
         className="
           hidden md:flex
-          w-[55%] max-w-2xl
+          w-[65%] max-w-2xl
           opacity-25 flex-col
           rounded-xl overflow-hidden
           border border-white/20
           shadow-2xl
-          absolute top-[38%] left-1/2 -translate-x-1/2
+          absolute top-[20%] left-1/2 -translate-x-1/2
         "
       >
         <div className="bg-white/15 px-4 py-2 flex items-center gap-2 shrink-0">

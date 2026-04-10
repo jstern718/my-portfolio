@@ -1,6 +1,7 @@
 'use client';
 import { useRef, useState, useEffect } from 'react';
 import Link from 'next/link';
+import ScrollHijackContainer from '../components/ScrollHijackContainer_v2';
 
 // Fades in a paragraph when it enters the viewport (one-way)
 function useFadeInOnScroll(threshold = 0.3) {
@@ -140,12 +141,9 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Ghostpage Area*/}
-      <div className="bg-white/12 mb-10 max-w-md md:max-w-2xl w-full aspect-square flex flex-col gap-6 mx-auto
-      border-2 border-white/40">
-        <p className="text-white/70 text-lg tracking-tight font-light mb-3 py-50">
-
-        </p>
+      {/* Ghostpage Area with Scroll Hijacking */}
+      <div className="px-8 md:px-20 flex flex-col items-start lg:items-center mb-10">
+        <ScrollHijackContainer />
       </div>
 
       {/* ── bottom of BODY SECTION ── */}
