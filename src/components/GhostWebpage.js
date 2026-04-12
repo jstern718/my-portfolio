@@ -87,10 +87,10 @@ export default function GhostWebpage({ scrollYProgress, ghostOpacity }) {
           flex md:hidden
           w-[70vw] max-w-xs
           opacity-20 flex-col
-          rounded-[2rem] overflow-hidden
+          rounded-[1rem] overflow-hidden
           border-4 border-white/30
-          shadow-2xl bg-white/5
-          absolute top-[12%] left-1/2 -translate-x-1/2
+          shadow-2xl bg-gray-100
+          absolute top-[30%] left-1/2 -translate-x-1/2
           max-h-[78%]
         "
       >
@@ -139,10 +139,10 @@ export default function GhostWebpage({ scrollYProgress, ghostOpacity }) {
         className="
           hidden md:flex
           w-[65%] max-w-2xl
-          opacity-25 flex-col
-          rounded-xl overflow-hidden
+          opacity-20 flex-col
+          rounded-2xl overflow-hidden
           border border-white/20
-          shadow-2xl
+          shadow-2xl bg-gray-100
           absolute top-[20%] left-1/2 -translate-x-1/2
         "
       >
