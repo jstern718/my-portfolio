@@ -42,7 +42,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable} ${montserrat.variable} bg-primary text-white`}>
+      <body className={`${inter.variable} ${playfair.variable} ${montserrat.variable} bg-primary text-offwhite`}>
         <Nav />
         {children}
       </body>

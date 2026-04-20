@@ -50,7 +50,7 @@ export default function Home() {
       {/* ── 1. HEADER — normal flow, scrolls away ── */}
       <div className="px-8 md:px-20 pt-24 pb-16 flex flex-col items-start lg:items-center lg:text-center">
         <div className="max-w-5xl mx-auto">
-          <div className="bg-work/70 m-1 mb-3 pt-3 pb-3 outline-4 outline-solid outline-black rounded-xl
+          <div className="bg-work/75 m-1 mb-3 pt-3 pb-3 outline-4 outline-solid outline-black rounded-xl
               border-solid border-e-olive-500 border-b-olive-500 border-t-olive-400 border-s-olive-400 border-2">
             <h1 className="text-xl sm:text-2xl md:text-3xl font-normal text-black mb-2 p-3 whitespace-normal
                 text-shadow-[0.3px_0.3px_0px] text-shadow-neutral-800 h-[1.8em] overflow-hidden">
@@ -118,13 +118,13 @@ export default function Home() {
       {/* ── 2. BODY SECTION with 7 paragraphs ── */}
       {/* ── top of BODY SECTION ── */}
 
-      <div className="px-8 md:px-20 flex flex-col items-start lg:items-center">
+      <div className="px-8 md:px-20 flex flex-col items-start lg:items-center text-offwhite/85">
 
         {/* Para 1 */}
         <div className="max-w-md w-full flex flex-col gap-6 pb-10 font-sans">
           <p
             ref={para1Ref}
-            className={`text-white text-2xl tracking-tight leading-normal font-light ${paraBase} ${para1Visible ? paraShown : paraHidden}`}
+            className={`text-2xl tracking-tight leading-normal font-light ${paraBase} ${para1Visible ? paraShown : paraHidden}`}
           >
             Design is no longer optional. Every detail, from your online presence to the logo on your shirt, tells a story. But does it tell the story you need it to?
           </p>
@@ -134,7 +134,7 @@ export default function Home() {
         <div className="max-w-md w-full flex flex-col gap-6 pb-10 font-sans">
           <p
             ref={para2Ref}
-            className={`text-white text-xl tracking-tight leading-normal font-light ${paraBase} ${para2Visible ? paraShown : paraHidden}`}
+            className={`text-xl tracking-tight leading-normal font-light ${paraBase} ${para2Visible ? paraShown : paraHidden}`}
           >
             When you have a small business, every dollar counts. It is reasonable to ask whether you really need to bring in someone from the outside in order to make your business stand out?
           </p>
@@ -148,12 +148,12 @@ export default function Home() {
 
       {/* ── bottom of BODY SECTION ── */}
 
-      <div className="px-8 md:px-20 flex flex-col items-start lg:items-center">
+      <div className="px-8 md:px-20 flex flex-col items-start lg:items-center text-offwhite/85">
          {/* Para 3 */}
          <div className="max-w-md w-full flex flex-col gap-6 pb-10 font-sans">
           <p
             ref={para3Ref}
-            className={`text-white text-xl tracking-tight leading-normal font-light ${paraBase} ${para3Visible ? paraShown : paraHidden}`}
+            className={`text-xl tracking-tight leading-normal font-light ${paraBase} ${para3Visible ? paraShown : paraHidden}`}
           >
             While it is true that, with all the tools now available, you would be able to create something pretty nice; there are major caveats. First you have to find the time to work on it.
              You could build a website that gets the information you need it to across. You could put the name of your business on a t-shirt or hat. But just doing the bare minimum is not how
@@ -165,7 +165,7 @@ export default function Home() {
         <div className="max-w-md w-full flex flex-col gap-6 pb-10 font-sans">
           <p
             ref={para4Ref}
-            className={`text-white text-xl tracking-tight leading-normal font-light ${paraBase} ${para4Visible ? paraShown : paraHidden}`}
+            className={`text-xl tracking-tight leading-normal font-light ${paraBase} ${para4Visible ? paraShown : paraHidden}`}
             >
             The real issue is that a business owner, you do not have the luxury to spend your time that way. In terms of value, it is not the case that you need to know everything there is to know about website hosting or design, suppliers, printing etc. Your time is better
             spent taking advantage of the skills you have already developed to their fullest.
@@ -176,7 +176,7 @@ export default function Home() {
         <div className="max-w-md w-full flex flex-col gap-6 pb-10 font-sans">
           <p
             ref={para5Ref}
-            className={`text-white text-xl tracking-tight leading-normal font-light ${paraBase} ${para5Visible ? paraShown : paraHidden}`}
+            className={`text-xl tracking-tight leading-normal font-light ${paraBase} ${para5Visible ? paraShown : paraHidden}`}
           >
             What's more, trying to offload the work can lead to a whole different set of problems, namely, not reaching the level of excellence that you strive to
             reach in the rest of your business.  Remember:</p>
@@ -186,7 +186,7 @@ export default function Home() {
         <div className="max-w-md w-full flex flex-col gap-6 pb-10 font-sans">
           <div
             ref={para6Ref}
-            className={`text-white text-xl tracking-wide leading-normal font-medium ${paraBase} ${para6Visible ? paraShown : paraHidden}`}
+            className={`text-offwhite/90 text-xl tracking-wide leading-normal font-medium ${paraBase} ${para6Visible ? paraShown : paraHidden}`}
           >
             <p className="pb-5 indent-10 ">- Small need not be unremarkable.</p>
             <p className="pb-3 indent-10">- Common need not be commonplace.</p>
@@ -199,7 +199,7 @@ export default function Home() {
         <div className="max-w-md w-full flex flex-col gap-6 pb-16 font-sans">
           <p
             ref={para7Ref}
-            className={`text-white text-xl tracking-tight leading-normal font-light ${paraBase} ${para7Visible ? paraShown : paraHidden}`}
+            className={`text-xl tracking-tight leading-normal font-light ${paraBase} ${para7Visible ? paraShown : paraHidden}`}
           >
             I help small businesses show their best face to the world, building beautiful digital experiences ... from websites and apps to original art and custom swag.
           </p>
@@ -219,7 +219,7 @@ export default function Home() {
               </Link>
               <button
                 onClick={() => setContactOpen(true)}
-                className="px-7 py-3 bg-white border border-primary/40 text-primary font-sans font-normal rounded-full hover:bg-white/90 transition-all duration-300 text-lg"
+                className="px-7 py-3 bg-offwhite/95 border border-primary/40 text-primary font-sans font-normal rounded-full hover:bg-white/90 transition-all duration-300 text-lg"
               >
                 Get in Touch
               </button>

@@ -2,7 +2,9 @@
 @plugin 'lightswind/plugin';
 @theme {
   /** COLORS */
-  --color-primary: #444A3F;
+  /* --color-primary: #444A3F; */
+  --color-primary: #28282B;
+  --color-offwhite:#FBFCFA;
   --color-complement: #92889a;
   --color-work: #c9e2e4;
   --color-green-accent: #1a3a1a;
@@ -29,5 +31,6 @@ body {
 }
 
 :root {
-  --color-primary: #444A3F;
+  --color-primary: #28282B;
+  --color-offwhite:#FBFCFA;
 }

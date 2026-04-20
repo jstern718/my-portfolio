@@ -114,36 +114,52 @@ function Card({ card, index, activeCategory, onClick, rippleIndex, rippleOrder }
         ${card.style} relative min-h-[220px]
         ${card.size === 'large' ? 'md:min-h-[320px]' : card.size === 'wide' ? 'md:min-h-[160px]' : 'md:min-h-[120px]'}
       `}
-      style={{ padding: '8px 4px 4px 8px' }}
+      style={{ padding: '8px 4px 4px 8px', margin: '8px 4px 8px 4px'}}
     >
 
       {/**-----------------------------------------------
-            3rd card — accent color, furthest back
+            4th card — accent color, furthest back
         -----------------------------------------------*/}
 
-      <div className='rounded-2xl border-black border-[0.08rem]'
+      <div className='rounded-2xl border-black border-[0.06rem] outline-1 outline-gray-300/30'
         style={{
           position: 'absolute',
           top: 0,
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundColor: '#6e8789',
+          backgroundColor: '#afd4d7',
           opacity: 1
         }}
       />
 
       {/**----------------------------------------
+            3rd card — white, middle layer
+        ------------------------------------------*/}
+
+      <div className='rounded-2xl border-black border-[0.06rem] outline-1 outline-gray-300/30'
+        style={{
+          position: 'absolute',
+          top: '-.5rem',
+          left: '-.35rem',
+          right: '.2rem',
+          bottom: '.2rem',
+          backgroundColor: '#899fa1',
+          opacity: 1,
+        }}
+      />
+
+       {/**----------------------------------------
             2nd card — white, middle layer
         ------------------------------------------*/}
 
-      <div className='rounded-2xl border-gray-700 border-[0.12rem]'
+      <div className='rounded-2xl border-black border-[0.06rem] outline-1 outline-gray-300/30'
         style={{
           position: 'absolute',
-          top: '0.6rem',
-          left: '-.2rem',
-          right: '.2rem',
-          bottom: '-0.6rem',
+          top: '-1rem',
+          left: '-.7rem',
+          right: '.4rem',
+          bottom: '.4rem',
           backgroundColor: '#c9e2e4',
           opacity: 1,
         }}
@@ -157,10 +173,10 @@ function Card({ card, index, activeCategory, onClick, rippleIndex, rippleOrder }
         ref={ref}
         className="absolute rounded-2xl overflow-hidden cursor-pointer"
         style={{
-          top: '.2rem',
-          left: '-.5rem',
-          right: '.5rem',
-          bottom: '-0.2rem',
+          top: '-1.4rem',
+          left: '-1rem',
+          right: '.6rem',
+          bottom: '0.6rem',
           opacity: 1,
         }}
         onMouseMove={handleMouseMove}
@@ -188,8 +204,7 @@ function Card({ card, index, activeCategory, onClick, rippleIndex, rippleOrder }
               className={cat.imageClass}
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-             <div className="absolute inset-0 border-[.1rem] border-black
-             rounded-2xl outline-none bg-linear-to-b from-gray-800/20 via-work/10 via-60% to-gray-900/60"/>
+             <div className="absolute inset-0 border-black border-[0.08rem] rounded-2xl outline-none bg-linear-to-b from-gray-800/20 via-work/10 via-60% to-gray-900/60"/>
           </>
         ) : (
           <>
@@ -209,7 +224,7 @@ function Card({ card, index, activeCategory, onClick, rippleIndex, rippleOrder }
          {/* Frosted glass pill behind text */}
           <div className="-mb-1 -ml-5 -mr-5 -pr-5 pt-2 pb-2
             backdrop-blur-md bg-white/25 shadow-sm shadow-neutral-500
-            border-l-black border-r-black border-l-[.1rem] border-r-[.1rem]">
+            border-l-black border-r-black border-l-[.08rem] border-r-[.08rem]">
             <p className="text-white/97 text-md font-display font-bold edt h-[1.4rem] overflow-hidden [text-shadow:.25_.25_.25px_black,-.2_-.2_.2px_black]">
                 <span className="text-white/97 text-xs inline-block whitespace-pre">  . . . . .  </span>
                 <span>{cat.label}</span>
@@ -330,11 +345,11 @@ export default function WorkPage() {
   };
 
   return (
-    <main className="bg-work min-h-screen pt-28 pb-20 px-6 md:px-10">
+    <main className="bg-primary min-h-screen pt-28 pb-20 px-6 md:px-10">
       <div className="max-w-5xl mx-auto">
 
         {/* Header */}
-        <div className="m-1 mb-3 pb-3 outline-4 outline-solid outline-black rounded-xl
+        <div className="bg-work m-1 mb-3 pb-3 outline-4 outline-solid outline-black rounded-xl
           border-solid border-e-olive-500 border-b-olive-500 border-t-olive-400 border-s-olive-400 border-2">
           <h1 className="text-6xl sm:text-7xl md:text-8xl
             font-inter font-extrabold text-black tracking-[-0.07em]
@@ -383,8 +398,9 @@ export default function WorkPage() {
         </div>
 
         {/* Grid */}
-         <div className="m-1 mb-3 p-4 pl-5 pt-5 outline-4 outline-solid outline-black rounded-xl
-          border-solid border-e-olive-500 border-b-olive-500 border-t-olive-400 border-s-olive-400 border-2">
+         <div className="bg-work m-1 mt-1 mb-3 pl-9 pt-11 pr-6 pb-7 outline-4 outline-solid outline-black rounded-xl
+          border-solid border-e-olive-500 border-b-olive-500 border-t-olive-400 border-s-olive-400 border-2
+            bg-[linear-gradient(to_right,#94A9CB80_1px,transparent_1px),linear-gradient(to_bottom,#176bfc40_1px,transparent_1px)] bg-[size:16px_16px]">
             <div className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-[200px_200px_200px] gap-7">
             {gridCards.map((card, index) => (
                 <Card
@@ -413,7 +429,7 @@ export default function WorkPage() {
                 setRippleIndex(null);
                 setRippleOrder(null);
               }}
-              className="px-8 py-3 border border-white/20 text-white/60 font-sans text-sm rounded-full hover:border-white/40 hover:text-white transition-all duration-300"
+              className="px-8 py-6 border border-white/20 text-white/60 font-sans text-sm rounded-full hover:border-white/40 hover:text-white transition-all duration-300"
             >
               Reset grid
             </button>

@@ -142,7 +142,7 @@ export default function GhostWebpage({ scrollYProgress, ghostOpacity }) {
           opacity-20 flex-col
           rounded-2xl overflow-hidden
           border border-white/20
-          shadow-2xl bg-gray-100
+          shadow-2xl bg-gray-400
           absolute top-[20%] left-1/2 -translate-x-1/2
         "
       >

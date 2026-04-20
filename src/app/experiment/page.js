@@ -396,7 +396,7 @@ export default function WorkPage() {
                  <span className="text-white opacity-50 inline-block whitespace-pre [text-shadow:.5_.5_.5px_black,-.5_-.5_.5px_black]" key={index}>  ✱</span>
             ))}
           </p>
-          <hr class="border-gray-400 border-1 -mb-1"/>
+          <hr className="border-gray-400 border-1 -mb-1"/>
           <h1 className="text-lg sm:text-2xl md:text-3xl
             font-inter font-extrabold text-black tracking-[0.03em]
             mb-1 -mt-2 p-3 s:pt-5 sm:pt-4 md:pt-3 lg:pt-3 whitespace-normal
@@ -408,7 +408,7 @@ export default function WorkPage() {
             ))}
 
           </h1>
-          <hr class="border-gray-400 border-1"/>
+          <hr className="border-gray-400 border-1"/>
           <p className="font-inter text-black font-bold tracking-[0.01em]
             text-md sm:text-xl md:text-2xl
             p-3 pl-4 -mb-3
