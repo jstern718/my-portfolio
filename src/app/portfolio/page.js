@@ -426,16 +426,17 @@ function BackCard({ onReset }) {
   return (
     <motion.div
       className="hidden md:flex items-center justify-center
-        cursor-pointer rounded-2xl border border-white/20
-        bg-white/5 backdrop-blur-sm hover:bg-white/10
-        transition-colors duration-200 min-h-14 mt-6 mx-1"
+        cursor-pointer rounded-2xl border border-black/40
+        bg-mauve-500/20 backdrop-blur-sm hover:bg-white/10
+        transition-colors duration-200 min-h-14 mt-6 mx-1
+        bg-[linear-gradient(to_right,#4d4d4d21_1px,transparent_1px),linear-gradient(to_bottom,#668dd130_1px,transparent_1px)] bg-[size:2px_2px]"
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 8 }}
       transition={{ duration: 0.25 }}
       onClick={onReset}
     >
-      <span className="text-white/60 font-sans text-sm tracking-wide">
+      <span className="text-white font-rubik text-xl tracking-wide [text-shadow:.25_.25_.25px_black]">
         ← back to all categories
       </span>
     </motion.div>
@@ -575,7 +576,9 @@ export default function WorkPage() {
   =============================================*/
 
   return (
-    <main className="bg-primary min-h-screen pt-28 pb-20 px-6 md:px-10">
+    <main className="bg-primary min-h-screen
+    bg-[linear-gradient(to_right,#4d4d4d21_1px,transparent_1px),linear-gradient(to_bottom,#668dd130_1px,transparent_1px)] bg-[size:2px_2px]">
+     <div className="max-w max-h pt-28 pb-20 px-6 md:px-10 bg-[linear-gradient(to_right,#113b7833_1px,transparent_1px),linear-gradient(to_bottom,#c595cb0D_1px,transparent_1px)] bg-[size:24px_24px]">
       <div className="max-w-5xl mx-auto">
 
         {/**-----------------------------------------------
@@ -626,7 +629,7 @@ export default function WorkPage() {
           -----------------------------------------------*/}
 
         <div>
-          <p className="text-white/40 font-sans text-sm mt-1 mb-2">
+          <p className="text-white/40 font-sans text-sm mt-1 mb-2 ml-5">
             {activeParent
               ? `exploring ${categories[activeParent].label} — click the card or any grayed card to go back`
               : 'click any card to explore that category'}
@@ -679,6 +682,7 @@ export default function WorkPage() {
         </AnimatePresence>
 
       </div>
+     </div>
     </main>
   );
 }
